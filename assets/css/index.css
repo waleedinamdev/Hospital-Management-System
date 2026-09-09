@@ -1,0 +1,381 @@
+/* GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f7fbfc;
+    color: #183b4a;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    scroll-margin-top: 80px;
+}
+
+
+/* NAVBAR */
+.user-navbar {
+    width: 100%;
+    min-height: 70px;
+    padding: 10px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+/* LOGO */
+.navbar-logo img {
+    height: 55px;
+}
+
+
+/* NAV LINKS */
+.user-nav-links {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.user-nav-links a {
+    text-decoration: none;
+    color: #183b4a;
+    padding: 10px 14px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.user-nav-links a:hover {
+    color: #087f8c;
+    background: #e9f9fa;
+}
+
+
+/* PROFILE */
+.profile-menu {
+    position: relative;
+}
+
+.profile-btn {
+    border: none;
+    background: #087f8c;
+    color: white;
+    padding: 10px 14px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.profile-btn:hover {
+    background: #066b76;
+}
+
+
+/* PROFILE DROPDOWN */
+.profile-dropdown {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 50px;
+    width: 190px;
+    background: white;
+    padding: 8px;
+    border-radius: 10px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+}
+
+.profile-menu:hover .profile-dropdown {
+    display: block;
+}
+
+.profile-dropdown a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #183b4a;
+    border-radius: 7px;
+}
+
+.profile-dropdown a:hover {
+    background: #e9f9fa;
+    color: #087f8c;
+}
+
+.profile-dropdown .logout {
+    color: #dc3545;
+}
+
+
+/* WELCOME */
+.welcome-section {
+    padding: 60px 7%;
+    background: linear-gradient(135deg, #e9f9fa, white);
+}
+
+.welcome-section h2 {
+    font-size: 40px;
+    color: #183b4a;
+}
+
+.welcome-section h2 span {
+    color: #087f8c;
+}
+
+.welcome-section p {
+    margin-top: 10px;
+    color: #6b8087;
+    font-size: 17px;
+}
+
+
+/* SERVICES */
+.services-section {
+    padding: 60px 7%;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-title h2 {
+    font-size: 35px;
+    color: #183b4a;
+}
+
+.section-title p {
+    color: #6b8087;
+}
+
+.services-container {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 25px;
+}
+
+
+/* SERVICE CARD */
+.service-card {
+    display: block;
+    padding: 35px 25px;
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+    background: white;
+    border: 1px solid #e2eef0;
+    border-radius: 16px;
+    box-shadow: 0 7px 25px rgba(0,0,0,0.06);
+    transition: 0.3s all;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    border-color: #087f8c;
+}
+
+
+/* SERVICE ICON */
+.service-icon {
+    width: 70px;
+    height: 70px;
+    margin: auto auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #e9f9fa;
+    color: #087f8c;
+    font-size: 30px;
+}
+
+.service-card:hover .service-icon {
+    background: #087f8c;
+    color: white;
+}
+
+
+/* SERVICE TEXT */
+.service-card h3 {
+    font-size: 21px;
+    margin-bottom: 10px;
+    color: #183b4a;
+}
+
+.service-card p {
+    color: #6b8087;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+
+/* APPOINTMENT SECTION */
+.appointment-section {
+    padding: 80px 7%;
+    background: linear-gradient(135deg, #e9f9fa, white);
+}
+
+.appointment-section .container {
+    max-width: 1200px;
+}
+
+.appointment-badge {
+    display: inline-block;
+    padding: 8px 16px;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    background: #dff5f7;
+    color: #087f8c;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.appointment-title {
+    font-size: 45px;
+    line-height: 1.2;
+    color: #183b4a;
+    margin-bottom: 20px;
+}
+
+.appointment-title span {
+    display: block;
+    color: #087f8c;
+}
+
+.appointment-text {
+    max-width: 560px;
+    margin-bottom: 30px;
+    color: #607983;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+
+/* APPOINTMENT BUTTON */
+.appointment-btn {
+    padding: 13px 25px;
+    border: 2px solid #087f8c;
+    border-radius: 8px;
+    background: #087f8c;
+    color: white;
+    font-weight: 600;
+}
+
+.appointment-btn:hover {
+    background: white;
+    color: #087f8c;
+}
+
+
+/* APPOINTMENT IMAGE */
+.appointment-image-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.appointment-image {
+    width: 100%;
+    height: 430px;
+    object-fit: cover;
+    border-radius: 25px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+}
+
+
+/* FLOATING CARD */
+.appointment-floating-card {
+    position: absolute;
+    left: -10px;
+    bottom: 35px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.floating-icon {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #e9f9fa;
+    color: #087f8c;
+    font-size: 21px;
+}
+
+.appointment-floating-card strong {
+    color: #183b4a;
+}
+
+.appointment-floating-card small {
+    display: block;
+    margin-top: 3px;
+    color: #71858c;
+}
+
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+    .user-navbar {
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px;
+    }
+
+    .user-nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .welcome-section {
+        text-align: center;
+        padding: 45px 5%;
+    }
+
+    .welcome-section h2 {
+        font-size: 30px;
+    }
+
+    .services-section,
+    .appointment-section {
+        padding: 50px 5%;
+    }
+
+    .services-container {
+        grid-template-columns: 1fr;
+    }
+
+    .appointment-title {
+        font-size: 32px;
+    }
+
+    .appointment-image {
+        height: 330px;
+        margin-top: 30px;
+    }
+
+    .appointment-floating-card {
+        left: 15px;
+        bottom: 20px;
+    }
+}

@@ -1,0 +1,240 @@
+/* ================= GENERAL ================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f7fbfc;
+    color: #183b4a;
+}
+
+
+/* ================= NAVBAR ================= */
+
+.main-navbar {
+    width: 100%;
+    height: 75px;
+    padding: 0 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+}
+
+.navbar-logo {
+    width: 260px;
+    height: 90px;
+    object-fit: contain;
+}
+
+
+/* ================= NAV BUTTONS ================= */
+
+.nav-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.login-btn,
+.register-btn {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+
+/* Login */
+
+.login-btn.active {
+    color: white;
+    background: #087f8c;
+    border: 2px solid #087f8c;
+}
+
+.login-btn:hover {
+    background: white;
+    color: #087f8c;
+}
+
+
+/* Register */
+
+.register-btn {
+    color: #087f8c;
+    background: white;
+    border: 2px solid #087f8c;
+}
+
+.register-btn:hover {
+    color: white;
+    background: #087f8c;
+}
+
+
+/* ================= LOGIN SECTION ================= */
+
+.login-section {
+    min-height: calc(100vh - 75px);
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* ================= LOGIN CARD ================= */
+
+.login-card {
+    width: 100%;
+    max-width: 900px;
+    min-height: 420px;
+    background: white;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.10);
+}
+
+
+/* ================= LEFT SIDE ================= */
+
+.login-left {
+    background: #e9f9fa;
+    min-height: 420px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-image {
+    max-width: 90%;
+    max-height: 260px;
+}
+
+.welcome-heading {
+    color: #183b4a;
+    font-size: 24px;
+    margin: 10px 0 5px;
+}
+
+.welcome-text {
+    color: #6b8087;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
+/* ================= RIGHT SIDE ================= */
+
+.login-right {
+    display: flex;
+    align-items: center;
+}
+
+.login-content {
+    width: 100%;
+    padding: 20px 40px;
+}
+
+.login-heading {
+    color: #183b4a;
+    font-size: 28px;
+}
+
+.login-subtitle {
+    color: #6b8087;
+    font-size: 14px;
+}
+
+
+/* ================= FORM ================= */
+
+.form-label {
+    color: #183b4a;
+    margin-bottom: 5px;
+}
+
+.form-control {
+    height: 42px;
+    border: 1px solid #d5e2e5;
+}
+
+.form-control:focus {
+    border-color: #087f8c;
+    box-shadow: 0 0 5px rgba(8,127,140,0.20);
+}
+
+.login-submit {
+    background: #087f8c;
+    border: none;
+    border-radius: 8px;
+}
+
+.login-submit:hover {
+    background: #066b76;
+}
+
+.register-text {
+    color: #6b8087;
+    font-size: 14px;
+}
+
+
+/* ================= ALERT ================= */
+
+.alert {
+    padding: 8px 12px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 991px) {
+
+    .main-navbar {
+        padding: 0 5%;
+    }
+
+    .navbar-logo {
+        width: 220px;
+        height: 80px;
+    }
+
+    .login-card {
+        max-width: 500px;
+    }
+
+    .login-content {
+        padding: 25px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .main-navbar {
+        padding: 0 20px;
+    }
+
+    .navbar-logo {
+        width: 180px;
+        height: 70px;
+    }
+
+    .nav-buttons {
+        gap: 5px;
+    }
+
+    .login-btn,
+    .register-btn {
+        padding: 7px 10px;
+        font-size: 13px;
+    }
+}

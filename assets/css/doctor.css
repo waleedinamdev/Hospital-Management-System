@@ -1,0 +1,298 @@
+/* ================= DOCTORS PAGE ================= */
+
+body {
+    background: #f7fbfc;
+    color: #183b4a;
+}
+
+/* Main Container */
+
+.container {
+    margin-left: 250px;
+    width: calc(100% - 250px);
+    padding: 35px;
+}
+
+
+/* ================= PAGE HEADER ================= */
+
+.page-title {
+    color: #183b4a;
+    font-weight: 700;
+}
+
+.page-subtitle {
+    color: #6c7f86;
+}
+
+
+/* ================= ADD BUTTON ================= */
+
+.btn-add {
+    background: #087f8c;
+    color: white;
+    border: 2px solid #087f8c;
+    border-radius: 7px;
+    padding: 9px 16px;
+    font-weight: 600;
+}
+
+.btn-add:hover {
+    background: white;
+    color: #087f8c;
+}
+
+
+/* ================= SEARCH ================= */
+
+.search-card {
+    background: white;
+    padding: 18px;
+    border: 1px solid #dce7e9;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.04);
+}
+
+.search-input {
+    border: 1px solid #cedfe2;
+}
+
+.search-input:focus {
+    border-color: #087f8c;
+    box-shadow: 0 0 0 3px rgba(8,127,140,0.15);
+}
+
+.btn-search {
+    background: #087f8c;
+    color: white;
+    border: 2px solid #087f8c;
+    border-radius: 7px;
+    padding: 8px 18px;
+}
+
+.btn-search:hover {
+    background: white;
+    color: #087f8c;
+}
+
+.btn-reset {
+    background: white;
+    color: #087f8c;
+    border: 2px solid #087f8c;
+    border-radius: 7px;
+    padding: 8px 18px;
+    text-decoration: none;
+}
+
+.btn-reset:hover {
+    background: #087f8c;
+    color: white;
+}
+
+
+/* ================= DOCTORS CARD ================= */
+
+.doctors-card {
+    background: white;
+    border: 1px solid #dce7e9;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+
+/* Card Header */
+
+.doctors-header {
+    background: white;
+    padding: 16px 20px;
+    border-bottom: 2px solid #087f8c;
+}
+
+.doctors-header h3 {
+    color: #183b4a;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+/* ================= TABLE ================= */
+
+.doctors-card .table {
+    margin: 0;
+}
+
+.doctors-card th {
+    background: #e8f5f7;
+    color: #183b4a;
+    padding: 14px 10px;
+    border-color: #dce7e9;
+}
+
+.doctors-card td {
+    color: #183b4a;
+    padding: 13px 10px;
+    border-color: #e8eef0;
+}
+
+.doctors-card tr:hover {
+    background: #f2fafb;
+}
+
+
+/* ================= EDIT BUTTON ================= */
+
+.btn-edit {
+    background: white;
+    color: #087f8c;
+    border: 1px solid #087f8c;
+}
+
+.btn-edit:hover {
+    background: #087f8c;
+    color: white;
+}
+
+
+/* ================= DELETE BUTTON ================= */
+
+.btn-delete {
+    background: white;
+    color: #c0392b;
+    border: 1px solid #c0392b;
+}
+
+.btn-delete:hover {
+    background: #c0392b;
+    color: white;
+}
+
+
+/* ================= PAGINATION ================= */
+
+.pagination .page-link {
+    color: #087f8c;
+    border-color: #dce7e9;
+}
+
+.pagination .page-link:hover {
+    background: #087f8c;
+    color: white;
+}
+
+.pagination .active .page-link {
+    background: #087f8c;
+    color: white;
+}
+
+
+/* ================= DOCTOR FORM ================= */
+
+.doctors-page {
+    min-height: 100vh;
+    padding: 40px 20px;
+    background: #f7fbfc;
+}
+
+.doctors-page .container {
+    max-width: 1000px;
+}
+
+
+/* Form Card */
+
+.doctor-form-card {
+    background: #e9f9fa;
+    border: 1px solid #dce7e9;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+
+/* Form Header */
+
+.doctor-form-header {
+    background: white;
+    color: #183b4a;
+    padding: 16px 20px;
+    border-bottom: 2px solid #087f8c;
+}
+
+.doctor-form-header h5 {
+    font-weight: 600;
+}
+
+
+/* Form Labels */
+
+.doctor-form-card .form-label {
+    color: #183b4a;
+    font-weight: 600;
+}
+
+
+/* Form Inputs */
+
+.doctor-form-card .form-control,
+.doctor-form-card .form-select {
+    border: 1px solid #cedfe2;
+    border-radius: 7px;
+    padding: 9px 12px;
+}
+
+.doctor-form-card .form-control:focus,
+.doctor-form-card .form-select:focus {
+    border-color: #087f8c;
+    box-shadow: 0 0 0 3px rgba(8,127,140,0.15);
+}
+
+
+/* ================= SAVE BUTTON ================= */
+
+.btn-save {
+    background: #087f8c;
+    color: white;
+    border: 2px solid #087f8c;
+    border-radius: 7px;
+    padding: 9px 18px;
+    font-weight: 600;
+}
+
+.btn-save:hover {
+    background: white;
+    color: #087f8c;
+}
+
+
+/* ================= CANCEL BUTTON ================= */
+
+.btn-cancel {
+    background: white;
+    color: #087f8c;
+    border: 2px solid #087f8c;
+    border-radius: 7px;
+    padding: 9px 18px;
+}
+
+.btn-cancel:hover {
+    background: #087f8c;
+    color: white;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+
+    .container {
+        margin-left: 0;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .doctors-page .container {
+        max-width: 100%;
+    }
+
+}

@@ -1,0 +1,528 @@
+/* =====================================================
+   MEDICAL RECORDS CSS
+   ===================================================== */
+
+
+/* ================= GENERAL ================= */
+
+body {
+    background: #f7fbfc;
+    color: #183b4a;
+}
+
+
+/* ================= MAIN PAGE ================= */
+
+.medical-records-page {
+    min-height: 100vh;
+    background: #f7fbfc;
+    padding: 35px 20px;
+}
+
+
+/* ================= CONTAINER ================= */
+
+.medical-container {
+    margin-left: 250px;
+    width: calc(100% - 250px);
+    padding: 20px 35px;
+}
+
+
+/* ================= PAGE HEADER ================= */
+
+.medical-page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+
+.medical-page-title {
+    color: #183b4a;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+
+.medical-page-subtitle {
+    color: #6c7f86;
+    margin: 0;
+}
+
+
+/* ================= ADD BUTTON ================= */
+
+.medical-btn-add {
+    background: #087f8c;
+    color: white;
+    border: 2px solid #087f8c;
+    border-radius: 7px;
+    padding: 9px 16px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+
+.medical-btn-add:hover {
+    background: white;
+    color: #087f8c;
+}
+
+
+/* ================= BACK BUTTON ================= */
+
+.medical-btn-back {
+    background: white;
+    color: #087f8c;
+    border: 2px solid #087f8c;
+    border-radius: 7px;
+    padding: 9px 16px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+
+.medical-btn-back:hover {
+    background: #087f8c;
+    color: white;
+}
+
+
+/* ================= SEARCH CARD ================= */
+
+.medical-search-card {
+    background: white;
+    padding: 18px;
+    border: 1px solid #dce7e9;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.04);
+    margin-bottom: 25px;
+}
+
+
+.medical-search-input {
+    border: 1px solid #cedfe2;
+    border-radius: 7px;
+    height: 42px;
+}
+
+
+.medical-search-input:focus {
+    border-color: #087f8c;
+    box-shadow: 0 0 0 3px rgba(8,127,140,0.15);
+}
+
+
+/* ================= SEARCH BUTTONS ================= */
+
+.medical-search-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+
+.medical-btn-search {
+    background: #087f8c;
+    color: white;
+    border: 2px solid #087f8c;
+    border-radius: 7px;
+    padding: 8px 18px;
+    transition: 0.3s;
+}
+
+
+.medical-btn-search:hover {
+    background: white;
+    color: #087f8c;
+}
+
+
+.medical-btn-reset {
+    background: white;
+    color: #087f8c;
+    border: 2px solid #087f8c;
+    border-radius: 7px;
+    padding: 8px 18px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+
+.medical-btn-reset:hover {
+    background: #087f8c;
+    color: white;
+}
+
+
+/* ================= MEDICAL RECORD CARD ================= */
+
+.medical-record-card {
+    background: white;
+    border: 1px solid #dce7e9;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+
+/* ================= CARD HEADER ================= */
+
+.medical-record-header {
+    background: white;
+    padding: 16px 20px;
+    border-bottom: 2px solid #087f8c;
+}
+
+
+.medical-record-header h3 {
+    color: #183b4a;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+}
+
+
+.medical-record-header small {
+    color: #6c7f86;
+}
+
+
+/* ================= TABLE ================= */
+
+.medical-table {
+    margin: 0;
+}
+
+
+.medical-table th {
+    background: #e8f5f7;
+    color: #183b4a;
+    padding: 14px 10px;
+    border-color: #dce7e9;
+    white-space: nowrap;
+    font-weight: 600;
+}
+
+
+.medical-table td {
+    color: #183b4a;
+    padding: 13px 10px;
+    border-color: #e8eef0;
+}
+
+
+.medical-table tbody tr:hover {
+    background: #f2fafb;
+}
+
+
+/* ================= DIAGNOSIS ================= */
+
+.medical-diagnosis {
+    color: #087f8c;
+    font-weight: 600;
+}
+
+
+/* ================= ACTIONS ================= */
+
+.medical-actions {
+    white-space: nowrap;
+}
+
+
+/* ================= EDIT BUTTON ================= */
+
+.medical-edit-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 34px;
+    height: 34px;
+
+    background: white;
+    color: #087f8c;
+
+    border: 1px solid #087f8c;
+    border-radius: 6px;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+
+.medical-edit-btn:hover {
+    background: #087f8c;
+    color: white;
+}
+
+
+/* ================= DELETE BUTTON ================= */
+
+.medical-delete-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 34px;
+    height: 34px;
+
+    background: white;
+    color: #c0392b;
+
+    border: 1px solid #c0392b;
+    border-radius: 6px;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+
+.medical-delete-btn:hover {
+    background: #c0392b;
+    color: white;
+}
+
+
+/* ================= NO DATA ================= */
+
+.medical-no-data {
+    color: #c0392b !important;
+    padding: 25px !important;
+}
+
+
+/* ================= PAGINATION ================= */
+
+.medical-pagination {
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+}
+
+
+.medical-pagination .pagination {
+    margin: 0;
+}
+
+
+.medical-pagination .page-link {
+    color: #087f8c;
+    border-color: #dce7e9;
+}
+
+
+.medical-pagination .page-link:hover {
+    background: #087f8c;
+    color: white;
+}
+
+
+.medical-pagination .active .page-link {
+    background: #087f8c;
+    color: white;
+    border-color: #087f8c;
+}
+
+
+/* =====================================================
+   MEDICAL FORM
+   ===================================================== */
+
+
+/* ================= FORM CARD ================= */
+
+.medical-form-card {
+    background: #e9f9fa;
+    border: 1px solid #dce7e9;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+
+/* ================= FORM HEADER ================= */
+
+.medical-form-header {
+    background: white;
+    color: #183b4a;
+    padding: 16px 20px;
+    border-bottom: 2px solid #087f8c;
+}
+
+
+.medical-form-header h5 {
+    margin: 0;
+    font-weight: 600;
+}
+
+
+/* ================= FORM BODY ================= */
+
+.medical-form-body {
+    padding: 25px;
+}
+
+
+/* ================= FORM LABEL ================= */
+
+.medical-form-label {
+    display: block;
+    color: #183b4a;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+
+/* ================= FORM INPUT ================= */
+
+.medical-form-control {
+    border: 1px solid #cedfe2;
+    border-radius: 7px;
+    padding: 9px 12px;
+}
+
+
+.medical-form-control:focus {
+    border-color: #087f8c;
+    box-shadow: 0 0 0 3px rgba(8,127,140,0.15);
+}
+
+
+/* ================= TEXTAREA ================= */
+
+textarea.medical-form-control {
+    resize: vertical;
+}
+
+
+/* ================= DATE ================= */
+
+.medical-date {
+    max-width: 500px;
+}
+
+
+/* ================= FORM BUTTONS ================= */
+
+.medical-form-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+
+/* ================= SAVE BUTTON ================= */
+
+.medical-btn-save {
+    background: #087f8c;
+    color: white;
+    border: 2px solid #087f8c;
+    border-radius: 7px;
+    padding: 9px 18px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+
+.medical-btn-save:hover {
+    background: white;
+    color: #087f8c;
+}
+
+
+/* ================= CANCEL BUTTON ================= */
+
+.medical-btn-cancel {
+    background: white;
+    color: #087f8c;
+    border: 2px solid #087f8c;
+    border-radius: 7px;
+    padding: 9px 18px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+
+.medical-btn-cancel:hover {
+    background: #087f8c;
+    color: white;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+   ===================================================== */
+
+@media (max-width: 992px) {
+
+    .medical-container {
+        margin-left: 0;
+        width: 100%;
+        padding: 20px;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    .medical-records-page {
+        padding: 20px 10px;
+    }
+
+
+    .medical-container {
+        padding: 15px;
+    }
+
+
+    .medical-page-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+
+    .medical-page-title {
+        font-size: 24px;
+    }
+
+
+    .medical-search-buttons {
+        width: 100%;
+    }
+
+
+    .medical-btn-search,
+    .medical-btn-reset {
+        flex: 1;
+        text-align: center;
+    }
+
+
+    .medical-form-body {
+        padding: 18px;
+    }
+
+
+    .medical-form-buttons {
+        flex-direction: column;
+    }
+
+
+    .medical-btn-save,
+    .medical-btn-cancel {
+        text-align: center;
+        width: 100%;
+    }
+
+}
